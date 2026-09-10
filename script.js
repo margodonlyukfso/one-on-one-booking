@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "2349069887508";
+const WHATSAPP_NUMBER = "2348103752448";
 
 const form = document.getElementById("bookingForm");
 const confirmation = document.getElementById("confirmation");
@@ -28,7 +28,7 @@ function detectTimezone() {
     timezoneSelect.appendChild(option);
 
     timezoneStatus.textContent =
-        "Your time zone was automatically detected from your device.";
+        "Tu zona horaria se detectó automáticamente desde tu dispositivo.";
 }
 
 detectTimezone();
@@ -210,30 +210,30 @@ whatsappButton.addEventListener("click", function() {
 
 
     const message =
-`Hello, I would like to book a 1:1 video consultation.
+`Hola, me gustaría reservar una videollamada 1 a 1.
 
-SESSION: ${data.sessionName}
+SESIÓN: ${data.sessionName}
 
-PRICE: ${data.price}
+PRECIO: ${data.price}
 
-NAME: ${data.name}
+NOMBRE: ${data.name}
 
-MY WHATSAPP NUMBER: ${data.whatsapp}
+MI NÚMERO DE WHATSAPP: ${data.whatsapp}
 
-EMAIL: ${data.email || "Not provided"}
+CORREO ELECTRÓNICO: ${data.email || "Not provided"}
 
-PREFERRED DATE: ${data.date}
+FECHA PREFERIDA: ${data.date}
 
-PREFERRED TIME: ${data.time}
+HORARIO PREFERIDO: ${data.time}
 
-TIME ZONE: ${data.timezone}
+HUSO HORARIO: ${data.timezone}
 
-WHAT I WOULD LIKE TO DISCUSS:
+LO QUE ME GUSTARÍA TRATAR:
 ${data.topic}
 
-Please confirm whether my requested date and time is available and provide the payment instructions.
+Por favor, confírmeme si la fecha y hora que solicité están disponibles y facilíteme las instrucciones de pago.
 
-Thank you.`;
+Gracias.`;
 
 
     const encodedMessage =
