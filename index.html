@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>1:1 Video Consultation</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="hero">
+            <p class="eyebrow">PRIVATE CONSULTATION</p>
+
+            <h1>1:1 Video Consultation</h1>
+
+            <p class="intro">
+                Book a private one-on-one video session
+                conducted through WhatsApp Business.
+            </p>
+        </section>
+
+
+        <!-- SESSION PACKAGES -->
+
+        <section class="packages">
+
+            <div class="package">
+                <h2>30 Minutes</h2>
+
+                <div class="price">$50</div>
+
+                <p>
+                    Private one-on-one WhatsApp
+                    video consultation.
+                </p>
+
+                <button
+                    type="button"
+                    onclick="selectPackage('30 Minutes', '$50')">
+                    Book Now
+                </button>
+            </div>
+
+
+            <div class="package featured">
+                <span class="badge">POPULAR</span>
+
+                <h2>60 Minutes</h2>
+
+                <div class="price">$95</div>
+
+                <p>
+                    Private one-on-one WhatsApp
+                    video consultation.
+                </p>
+
+                <button
+                    type="button"
+                    onclick="selectPackage('60 Minutes', '$95')">
+                    Book Now
+                </button>
+            </div>
+
+
+            <div class="package">
+                <h2>90 Minutes</h2>
+
+                <div class="price">$140</div>
+
+                <p>
+                    Private one-on-one WhatsApp
+                    video consultation.
+                </p>
+
+                <button
+                    type="button"
+                    onclick="selectPackage('90 Minutes', '$140')">
+                    Book Now
+                </button>
+            </div>
+
+        </section>
+
+
+        <!-- BOOKING FORM -->
+
+        <section class="booking" id="booking">
+
+            <h2>Book Your Session</h2>
+
+            <p class="booking-intro">
+                Choose your preferred date and time.
+                Your appointment will be confirmed manually.
+            </p>
+
+
+            <form id="bookingForm">
+
+                <label for="session">
+                    Selected Session
+                </label>
+
+                <select id="session" required>
+                    <option value="">
+                        Select a session
+                    </option>
+
+                    <option value="30 Minutes - $50">
+                        30 Minutes — $50
+                    </option>
+
+                    <option value="60 Minutes - $95">
+                        60 Minutes — $95
+                    </option>
+
+                    <option value="90 Minutes - $140">
+                        90 Minutes — $140
+                    </option>
+                </select>
+
+
+                <label for="name">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+
+                <label for="whatsapp">
+                    WhatsApp Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="whatsapp"
+                    placeholder="+1 234 567 8900"
+                    required
+                >
+
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="you@example.com"
+                >
+
+
+                <label for="date">
+                    Preferred Date
+                </label>
+
+                <input
+                    type="date"
+                    id="date"
+                    required
+                >
+
+
+                <label for="time">
+                    Preferred Time
+                </label>
+
+                <input
+                    type="time"
+                    id="time"
+                    required
+                >
+
+
+                <label for="timezone">
+                    Time Zone
+                </label>
+
+                <select id="timezone" required>
+
+                    <option value="">
+                        Select your time zone
+                    </option>
+
+                    <option value="UTC-8">
+                        UTC-8
+                    </option>
+
+                    <option value="UTC-7">
+                        UTC-7
+                    </option>
+
+                    <option value="UTC-6">
+                        UTC-6
+                    </option>
+
+                    <option value="UTC-5">
+                        UTC-5
+                    </option>
+
+                    <option value="UTC-4">
+                        UTC-4
+                    </option>
+
+                    <option value="UTC-3">
+                        UTC-3
+                    </option>
+
+                    <option value="UTC">
+                        UTC
+                    </option>
+
+                    <option value="UTC+1">
+                        UTC+1
+                    </option>
+
+                    <option value="UTC+2">
+                        UTC+2
+                    </option>
+
+                    <option value="UTC+3">
+                        UTC+3
+                    </option>
+
+                    <option value="UTC+4">
+                        UTC+4
+                    </option>
+
+                    <option value="UTC+5">
+                        UTC+5
+                    </option>
+
+                    <option value="UTC+6">
+                        UTC+6
+                    </option>
+
+                    <option value="UTC+7">
+                        UTC+7
+                    </option>
+
+                    <option value="UTC+8">
+                        UTC+8
+                    </option>
+
+                    <option value="UTC+9">
+                        UTC+9
+                    </option>
+
+                    <option value="UTC+10">
+                        UTC+10
+                    </option>
+
+                    <option value="UTC+11">
+                        UTC+11
+                    </option>
+
+                    <option value="UTC+12">
+                        UTC+12
+                    </option>
+
+                </select>
+
+
+                <label for="topic">
+                    What would you like to discuss?
+                </label>
+
+                <textarea
+                    id="topic"
+                    rows="5"
+                    placeholder="Tell us briefly what you would like to discuss during the call."
+                    required
+                ></textarea>
+
+
+                <button
+                    type="submit"
+                    class="submit-btn">
+                    Request Session
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
