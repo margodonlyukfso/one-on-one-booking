@@ -4,12 +4,14 @@
     padding: 0;
 }
 
+
 body {
     font-family: Arial, sans-serif;
     background: #0b0b0b;
-    color: #ffffff;
+    color: #fff;
     line-height: 1.6;
 }
+
 
 .container {
     width: 100%;
@@ -26,6 +28,7 @@ body {
     padding: 50px 10px 40px;
 }
 
+
 .eyebrow {
     font-size: 12px;
     letter-spacing: 3px;
@@ -34,10 +37,12 @@ body {
     margin-bottom: 12px;
 }
 
+
 .hero h1 {
     font-size: 42px;
     margin-bottom: 15px;
 }
+
 
 .intro {
     max-width: 600px;
@@ -55,6 +60,7 @@ body {
     margin-bottom: 70px;
 }
 
+
 .package {
     position: relative;
     background: #151515;
@@ -64,22 +70,34 @@ body {
     text-align: center;
 }
 
+
 .package h2 {
     font-size: 22px;
     margin-bottom: 12px;
 }
 
+
 .price {
     font-size: 38px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     color: #d4af37;
 }
+
+
+.local-price {
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
 
 .package p {
     color: #aaa;
     margin-bottom: 25px;
 }
+
 
 .package button,
 .submit-btn {
@@ -94,14 +112,17 @@ body {
     cursor: pointer;
 }
 
+
 .package button:hover,
 .submit-btn:hover {
-    opacity: 0.85;
+    opacity: 0.9;
 }
+
 
 .featured {
     border: 1px solid #d4af37;
 }
+
 
 .badge {
     position: absolute;
@@ -124,11 +145,13 @@ body {
     margin: auto;
 }
 
+
 .booking h2 {
     text-align: center;
     font-size: 30px;
     margin-bottom: 10px;
 }
+
 
 .booking-intro {
     text-align: center;
@@ -136,12 +159,14 @@ body {
     margin-bottom: 30px;
 }
 
+
 form {
     background: #151515;
     border: 1px solid #292929;
     border-radius: 18px;
     padding: 30px;
 }
+
 
 label {
     display: block;
@@ -151,9 +176,11 @@ label {
     font-weight: bold;
 }
 
+
 label:first-child {
     margin-top: 0;
 }
+
 
 input,
 select,
@@ -168,18 +195,127 @@ textarea {
     outline: none;
 }
 
+
 input:focus,
 select:focus,
 textarea:focus {
     border-color: #d4af37;
 }
 
+
 textarea {
     resize: vertical;
 }
 
+
 .submit-btn {
     margin-top: 25px;
+}
+
+
+.timezone-status {
+    font-size: 12px;
+    color: #888;
+    margin-top: 6px;
+}
+
+
+/* CONFIRMATION */
+
+.confirmation {
+    display: none;
+    max-width: 650px;
+    margin: 40px auto 0;
+}
+
+
+.confirmation.show {
+    display: block;
+}
+
+
+.confirmation h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+.confirmation-intro {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+
+.summary {
+    background: #151515;
+    border: 1px solid #292929;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px 20px;
+    border-bottom: 1px solid #292929;
+}
+
+
+.summary-row span,
+.summary-topic span {
+    color: #888;
+}
+
+
+.summary-row strong {
+    text-align: right;
+}
+
+
+.summary-topic {
+    padding: 20px;
+}
+
+
+.summary-topic p {
+    margin-top: 8px;
+    color: #ddd;
+    white-space: pre-wrap;
+}
+
+
+.confirmation-buttons {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+
+.edit-btn,
+.whatsapp-btn {
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.edit-btn {
+    background: #292929;
+    color: #fff;
+}
+
+
+.whatsapp-btn {
+    background: #d4af37;
+    color: #000;
 }
 
 
@@ -202,105 +338,6 @@ textarea {
     form {
         padding: 22px;
     }
-}
-
-/* TIMEZONE */
-
-.timezone-status {
-    font-size: 12px;
-    color: #888;
-    margin-top: 6px;
-}
-
-
-/* CONFIRMATION */
-
-.confirmation {
-    display: none;
-    max-width: 650px;
-    margin: 40px auto 0;
-}
-
-.confirmation.show {
-    display: block;
-}
-
-.confirmation h2 {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-.confirmation-intro {
-    text-align: center;
-    color: #aaa;
-    margin-bottom: 30px;
-}
-
-.summary {
-    background: #151515;
-    border: 1px solid #292929;
-    border-radius: 18px;
-    overflow: hidden;
-}
-
-.summary-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 18px 20px;
-    border-bottom: 1px solid #292929;
-}
-
-.summary-row span,
-.summary-topic span {
-    color: #888;
-}
-
-.summary-row strong {
-    text-align: right;
-}
-
-.summary-topic {
-    padding: 20px;
-}
-
-.summary-topic p {
-    margin-top: 8px;
-    color: #ddd;
-    white-space: pre-wrap;
-}
-
-.confirmation-buttons {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 12px;
-    margin-top: 20px;
-}
-
-.edit-btn,
-.whatsapp-btn {
-    border: none;
-    border-radius: 10px;
-    padding: 15px;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.edit-btn {
-    background: #292929;
-    color: #fff;
-}
-
-.whatsapp-btn {
-    background: #d4af37;
-    color: #000;
-}
-
-.edit-btn:hover,
-.whatsapp-btn:hover {
-    opacity: 0.85;
 }
 
 
